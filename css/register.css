@@ -1,0 +1,43 @@
+/* General */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body{
+    font-family: cursive;
+  }
+  .flex {
+    display: flex;
+  }
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .login-content {
+    margin-top: 70px;
+    max-height: 752px;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  .image-section {
+    width: 50%;
+  }
+  .image-section img {
+    width: 100%;
+  }
+  .form-section {
+    flex-direction: column;
+    padding-top: 80px;
+    margin: 0 auto;
+    direction: rtl;
+  }
+  .form-section h2 {
+    font-size: 28px;
+    font-family: sans-serif;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    font-weight: bold;
+  }
