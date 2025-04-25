@@ -4,9 +4,14 @@
     margin: 0;
     box-sizing: border-box;
   }
+  body{
+    font-family: "Cairo", sans-serif;
+
+  }
   .flex {
     display: flex;
   }
+
   .container {
     width: 80%;
     margin: 0 auto;
@@ -33,7 +38,6 @@
   }
   .form-section h2 {
     font-size: 28px;
-    font-family: sans-serif;
     color: black;
     text-align: center;
     margin-bottom: 40px;
@@ -107,10 +111,14 @@
   @media (max-width: 768px) {
     .container {
       width: 100%;
+      padding: 0px 15px;
     }
     .login-content {
       flex-direction: column;
       overflow: visible;
+      height: auto;
+      margin-top: 30px;
+      border-radius: 0;
     }
     .form-section h2 {
       font-size: 24px;
@@ -123,7 +131,12 @@
     }
   
     .image-section img {
-      border-radius: 0;
+      border-radius: 20px;
+      max-height: 300px;
+      object-fit: cover;
+    }
+    .form-section{
+      padding: 40px 20px;
     }
     .form-section form label {
       text-align: center;

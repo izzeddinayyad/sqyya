@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+       
     <link rel="stylesheet" href="css/register.css">
     <title>register page - SqyyaAlmiyah</title>
 </head>
@@ -15,15 +19,15 @@
           </div>
           <!-- form section -->
           <div class="form-section flex">
-            <h2>انشاء حساب جديد</h2>
+            <h2>إنشاء حساب جديد</h2>
             <form>
               <div class="flex">
-                <div>
-                    <label for="full-name">الاسم كامل</label>
+                <div class="flex">
+                    <label for="full-name">الإسم كامل</label>
                     <input type="text" id="full-name" placeholder="ادخل الاسم كامل" required>
                 </div>
-                <div>
-                    <label for="Email1" class="form-label">البريد الالكتروني</label>
+                <div class="flex">
+                    <label for="Email1" class="form-label">البريد الإلكتروني</label>
                     <input
                     type="email"
                     id="Email1"
@@ -33,14 +37,14 @@
                 </div>
               </div>
               <div class="flex">
-                <div>
+                <div class="flex">
                     <label for="phone">رقم الهاتف</label>
                     <input type="number" name="phone" id="phone" placeholder="059*****" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="user_type">نوع المستخدم</label>
                     <select name="user_type" id="user_type">
-                        <option value="val1" selected disabled>اختر نوع المستخدم</option>
+                        <option value="val1" selected disabled>إختر نوع المستخدم</option>
                         <option value="val1">مندوب</option>
                         <option value="val2">صاحب الموؤسسة</option>
                         <option value="val3">سائق الشاحنة</option>
@@ -48,14 +52,14 @@
                 </div>
               </div>
               <div class="flex">
-                <div>
+                <div class="flex">
                     <label for="adress">العنوان بالتفصيل</label>
                     <input type="text" placeholder="ادخل العنوان بالتفصيل" id="adress" required>
                 </div>
-                <div>
+                <div class="flex">
                     <label for="city">المحافظة</label>
                     <select name="city" id="city">
-                        <option value="val1" selected disabled>اخترالمحافظة</option>
+                        <option value="val1" selected disabled>إختر المحافظة</option>
                         <option value="val1">شمال غزة</option>
                         <option value="val1">غزة</option>
                         <option value="val1">الوسطى</option>
@@ -65,7 +69,7 @@
                 </div>
               </div>
               <div class="flex">
-                <div>
+                <div class="flex">
                     <label for="Password" class="form-label">كلمة المرور</label>
                     <input
                       type="password"
@@ -75,16 +79,16 @@
                     />
 
                 </div>
-                <div>
+                <div class="flex">
                     <label for="re-pass">تأكيد كلمة المرور</label>
                     <input type="password" id="re-pass" placeholder="********">
                 </div>
               </div>
   
-              <button type="submit">انشاء حساب</button>
+              <button type="submit">إنشاء حساب</button>
             </form>
             <div class="toRigesterSection">
-              <span>لديك حساب ؟ <a href="#">سجل الدخول الآن</a></span>
+              <span>لديك حساب ؟ <a href="login.html">سجل الدخول الآن</a></span>
             </div>
           </div>
         </div>
