@@ -120,13 +120,14 @@
   .login-content {
     flex-direction: column;
     overflow: visible;
-    height: auto;
+    min-height: 1000px;
     margin-top: 30px;
     border-radius: 0;
   }
   .form-section h2 {
     font-size: 24px;
     font-weight: bold;
+    
   }
   .image-section,
   .form-section {
