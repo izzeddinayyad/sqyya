@@ -18,7 +18,23 @@ a{
 .flex{
   display: flex;
 }
+.divider{
+  width: 100%;
+  margin: 80px auto;
 
+}
+.divider h2{
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  font-weight: bolder;
+}
+
+.divider img{
+  display: block;
+  margin: 0 auto;
+  /* width: auto; */
+}
 /* header section */
 header{
 
@@ -117,22 +133,7 @@ header .container .btn-group a.register-btn:hover {
   /* margin-bottom: 70px; */
   margin: 70px auto;
 }
-.about-section .divider{
-  width: 100%;
-  margin: 80px auto;
 
-}
-.about-section .divider h2{
-  text-align: center;
-  font-size: 28px;
-  padding: 10px;
-}
-
-.about-section .divider img{
-  display: block;
-  margin: 0 auto;
-  /* width: auto; */
-}
 .about-section .image-section{
   position: relative;
   width: 50%;
@@ -142,31 +143,28 @@ header .container .btn-group a.register-btn:hover {
 
 }
 .about-section .image-section img.one{
-  width: 560px;
-  height: 480;
+  width: 100%;
+  max-width: 560px;
+  height: auto;
   display: block;
   margin: 0 auto;
-  /* position: absolute; */
-  /* top: 0; */
-  /* right: 0; */
-  /* z-index: 1; */
-  /* width: 0%; */
-  /* margin: auto; */
 }
 .about-section .image-section .two{
   position: absolute;
   bottom: -3%;
-  right:45%;
+  right: 45%;
   z-index: -1;
-  width: 350px;
-  height: 313px;
+  width: 62.5%; /* 350/560 */
+  max-width: 350px;
+  height: auto;
+  aspect-ratio: 350/313;
   background: #6C5CE7;
   border-radius: 20px;
-  /* margin-left: px; */
 }
 .about-section .content-section{
   width: 50%;
   padding-left: 30px;
+  min-width: 300px;
 }
 .about-section .content-section h3{
   font-size: 22px;
@@ -185,11 +183,146 @@ header .container .btn-group a.register-btn:hover {
   margin-bottom: 10px;
 }
 
+/* service section  */
+
+.service-section .cards {
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.card{
+  width: 30%;
+  margin: 40px 0;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+
+}
+.card .image-card img{
+  width: 100%;
+}
+.card .title-card{
+  color: blueviolet;
+  font-weight: 900;
+  font-size: 35px;
+  text-align: center;
+  margin: 20px 0;
+}
+.card .dec-card{
+  text-align: center;
+  color: #64748B;
+  padding: 30px;
+  font-size: 30px;
+}
 
 
+/* who we are section */
+div.who-we-are-section div div h3{
+  font-size: 40px;
+  padding: 20px 0;
 
+}
+div.who-we-are-section div div p{
+  font-size: 30px;
+  color: #64748B;
+  width: 50%;
+  padding: 20px 0;
 
+}
+div.who-we-are-section div div ul {
+  list-style: square;
+  color: #64748B;
+  margin-right: 20px;
+  padding: 20px 0;
+}
+/* contact us section */
+.contact-section{
+  width: 80%;
+  margin: 70px auto;
 
+}
+.contact-form{
+  align-items: start;
+}
+.contact-form div{
+  width: 100%;
+}
+.contact-form div form{
+  padding: 10px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-form div form  label{
+color: blueviolet;
+padding: 30px 0;
+display: block;
+font-size: 25px;
+}
+
+.contact-form div form input,textarea{
+  font-weight: 500;
+  width: 100%;
+  padding: 20px 12px 20px 85px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+  border: 1px solid #777c83;
+}
+.contact-form div form .phone-email{
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-form div form .phone-email .phone{
+  flex-direction: column;
+  width: 45%;
+}
+.contact-form div form .phone-email .email{
+  width: 45%;
+}
+.contact-form div form button{
+  width: 100%;
+  border-radius: 20px;
+  background: #6C5CE7;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+  padding: 25px;
+  border: 0;
+  margin-top: 20px;
+}
+.phone-section{
+  padding: 30px;
+}
+.phone-section div{
+  padding: 30px 0;
+  margin: 25px 0;
+  flex-direction: column;
+  font-size: 24px;
+  font-weight: 200;
+}
+.phone-section div span{
+  margin: 15px;
+}
+
+/* footer section */
+footer{
+  background: #6C5CE7;
+  text-align: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 0;
+  padding: 25px;
+}
+footer h2,footer div ,footer span{
+  margin: 20px;
+}
+footer div a {
+  color: aliceblue;
+  font-size: 18px;
+}
 
 
 
@@ -272,6 +405,80 @@ header .container .btn-group a.register-btn:hover {
     width: 90%;
     font-size: 16px;
     margin-bottom: 25px;
+  }
+  .about-section {
+    display: flex;
+    flex-direction: column;
+  }
+  .about-section .flex{
+    flex-direction: column;
+  }
+  .about-section .image-section,
+  .about-section .content-section {
+    width: 100%;
+    padding: 10px;
+  }
+  
+  .about-section .content-section {
+    padding-left: 0;
+    margin-top: 40px;
+    width: 100%;
+  }
+  .about-section .image-section{
+    width: 100%;
+    /* position: relative; */
+  }
+  .about-section .content-section h3{
+    text-align: center;
+  }
+  .about-section .image-section
+  .about-section .image-section .two {
+    display: none;
+    right: 35%;
+    width: 50%;
+    bottom: -5%;
+  }
+  
+  .about-section .divider {
+    margin: 50px auto;
+  }
+  
+  .about-section .divider h2 {
+    font-size: 24px;
+  }
+  .line{
+    margin: 0 auto;
+  }
+  .about-section p{
+    text-align: center;
+  }
+  /* service section */
+  .card{
+    width: 100%;
+  }
+/* who we are section */
+div.who-we-are-section div div h3,
+div.who-we-are-section div div p,
+div.who-we-are-section div div ul{
+  text-align: center;
+  margin: 0 auto;
+}
+div.who-we-are-section div div ul{
+  list-style-position: inside;
+}
+/* contact us section */
+  .contact-section .contact-form{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .contact-form div form  label{
+    width: 120%;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  .phone-section div{
+    margin: 0 auto;
+    text-align: center;
   }
 }
 
