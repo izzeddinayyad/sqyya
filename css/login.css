@@ -18,7 +18,7 @@
   }
   .login-content {
     margin-top: 70px;
-    max-height: 752px;
+    max-height: 850px;
     overflow: hidden;
     border-radius: 20px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -93,6 +93,18 @@
     font-weight: bold;
     font-size: 18px;
   }
+  .error-message {
+    color: #D63031;
+    font-size: 14px;
+    display: none;
+    margin-top: 5px;
+}
+input.error {
+    border-color: #D63031 !important;
+}
+input.success {
+    border-color: #00B894!important;
+}
   .form-section form input:focus {
     outline: none;
     border-color: blueviolet;

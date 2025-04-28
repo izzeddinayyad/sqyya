@@ -25,7 +25,7 @@
         <!-- form section -->
         <div class="form-section flex">
           <h2>تسجيل الدخول</h2>
-          <form>
+          <form id="formValidation" action="index.html" method="post">
             <div>
               <label for="Email1" class="form-label">البريد الإلكتروني</label>
               <input
@@ -34,6 +34,8 @@
                 placeholder="example@email.com"
                 required
               />
+              <span class="error-message" id="emailError">البريد الإلكتروني غير صحيح</span>
+
             </div>
             <div>
               <label for="Password1" class="form-label">كلمة المرور</label>
@@ -41,11 +43,15 @@
                 type="password"
                 id="Password1"
                 placeholder="أدخل كلمة المرور"
-                r\
+                required
               />
+              <span class="error-message" id="passwordError">كلمة المرور غير صحيحة</span>
+
             </div>
 
             <button type="submit">تسجيل الدخول</button>
+            <div id="Status"></div>
+
           </form>
           <div class="toRigesterSection">
             <span>ليس لديك حساب ؟ <a href="register.html">سجل الآن</a></span>
