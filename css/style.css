@@ -225,6 +225,8 @@ div.who-we-are-section div div ul {
   margin-right: 20px;
   padding: 20px 0;
 }
+
+ 
 /* contact us section */
 .contact-section {
   width: 80%;
@@ -282,21 +284,51 @@ textarea {
   padding: 25px;
   border: 0;
   margin-top: 20px;
-}
-.phone-section {
+}.phone-section {
   padding: 30px;
 }
-.phone-section div {
+
+.phone-section > div {
   padding: 30px 0;
   margin: 25px 0;
-  flex-direction: column;
-  font-size: 24px;
-  font-weight: 200;
-}
-.phone-section div span {
-  margin: 15px;
 }
 
+.phone-section .flex {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+}
+
+.phone-section .flex .tr {
+  display: flex;
+  flex-direction: column; /* Stack spans vertically */
+  margin-right: 20px; /* Space between text and icon */
+}
+
+.phone-section .flex .tr div {
+  display: flex;
+  flex-direction: column; /* Stack spans vertically */
+}
+
+.phone-section .flex .tr  span {
+  font-size: 24px;
+  font-weight: 200;
+  /* display: block; */
+  margin-bottom: 10px; /* Space between stacked spans */
+}
+
+.phone-section div .icons {
+  width: 48px;
+  height: 48px;
+  padding: 13px;
+  background: #00cec9;
+  border-radius: 10px;
+  margin-left: auto; /* Push icon to the right */
+}
+
+.icons img {
+  display: block;
+  width: 100%;
+}
 /* footer section */
 footer {
   background: #6c5ce7;
@@ -453,8 +485,30 @@ footer div a {
     font-size: 20px;
     font-weight: 700;
   }
-  .phone-section div {
+  /* .phone-section div {
     margin: 0 auto;
     text-align: center;
+  } */
+  .phone-section {
+    padding: 25px;
+  }
+  
+  .phone-section > div {
+    padding: 25px 0;
+    margin: 20px 0;
+  }
+  
+  .phone-section .flex {
+    flex-wrap: nowrap;
+    gap: 25px;
+  }
+  
+  .phone-section .flex div span {
+    font-size: 22px;
+  }
+  
+  .phone-section div .icons {
+    width: 45px;
+    height: 45px;
   }
 }
