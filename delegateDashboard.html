@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="css/driverDashbord.css" />
+    <title > المندوب -  SqyyaAlmiyah</title>
+  </head>
+  <body>
+    <div class="container-full">
+        <!-- side bar section -->
+        <div class="sidebar">
+            <div class="header-side">
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <h2>لوحة تحكم المندوب</h2>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#">الرئيسية</a><img src="images/dashbordIcons/cottage.png" alt="cottage"></li>
+                <li><a href="#">الشاحنات الواردة</a><img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></li>
+                <li><a href="#">سجل التسليمات</a><img src="images/dashbordIcons/assignment.png" alt="assignment"></li>
+                <li><a href="#">المستفيدون</a><img src="images/dashbordIcons/diversity_3.png" alt="diversity_3"></li>
+                <li><a href="#">التقارير</a><img src="images/dashbordIcons/draft.png" alt="draft"></li>
+                <li><a href="#">الاعدادات</a><img src="images/dashbordIcons/settings.png" alt="settings"></li>
+                <li><a href="#">تسجيل الخروج</a><img src="images/dashbordIcons/exit_to_app.png" alt="exit_to_app"></li>
+            </ul>
+        </div>
+        <!-- the main content section -->
+         <div class="main-content">
+            <!-- dashboard header -->
+            <div class="head">
+                <div class="notification">
+                    <img src="images/dashbordIcons/notifications.png" alt="notification">
+                </div>
+                <div class="image-logo">
+                    <img src="images/dashbordIcons/Group 48095965.png" alt="profile-picture">
+                </div>
+                <div class="name-jop-title">
+                  <span>محمد سنبل</span>
+                  <span>مندوب مركز جباليا</span>
+                </div>
+            </div>
+            <!-- dashboard content -->
+            <div class="container flex direcation-column space-between">
+              <h2>لوحة التحكم - المندوب</h2>
+              <!-- Shelter information -->
+               <div class="shelter">
+                <table border="1">
+                  <caption class="flex space-between"><span>معلومات مركز الإيواء<img src="images/dashbordIcons/cottage.png" alt="cottage"></span><button>عرض الكل</button></caption>
+                  <thead>
+                    <th>اسم المركز</th>
+                    <th>عدد المستفيدين</th>
+                    <th>آخر تحديث</th>
+                    <th>المحافظة</th>
+                    <th>الكمية اليومية المطلوبة</th>
+                    <th>حالة المركز</th>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>مركز جباليا للإيواء</td>
+                      <td>250 أسرة</td>
+                      <td>10:30 صباحًا</td>
+                      <td>15/06/2023</td>
+                      <td>8,000 لتر</td>
+                      <td>نشطة</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                      <td></td>
+                    </tr>
+                  </tbody>
+                </table>
+               </div>
+               <!-- daily trucks -->
+                <div class="daily-trucks">
+                  <table border="1">
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></span><button>عرض الكل</button></caption>
+                    <thead>
+                      <th>رقم الشحنة</th>
+                      <th>السائق</th>
+                      <th>الوقت المتوقع</th>
+                      <th>الكمية</th>
+                      <th>الحالة</th>
+                      <th>الإجراء</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>محمد خليل كنباوي</td>
+                        <td>09:30 صباحًا</td>
+                        <td>8,000 لتر</td>
+                        <td>نشطة</td>
+                        <td><button>تفاصيل</button></td>
+                      </tr>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>خالد كشميري</td>
+                        <td>09:30 صباحًا</td>
+                        <td>8,000 لتر</td>
+                        <td>نشطة</td>
+                        <td><button>تفاصيل</button></td>
+                      </tr>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>خضر كرويته</td>
+                        <td>09:30 صباحًا</td>
+                        <td>8,000 لتر</td>
+                        <td>نشطة</td>
+                        <td><button>تفاصيل</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- history records -->
+                 <div class="history-records">
+                  <table border="1">
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/history.png" alt="history-records"></span><button>عرض الكل</button></caption>
+                    <thead>
+                      <th>رقم الشحنة</th>
+                      <th>السائق</th>
+                      <th>التاريخ</th>
+                      <th>الكمية</th>
+                      <th>الحالة</th>
+                      <th>التوقيع</th>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>محمد خليل كنباوي</td>
+                        <td>15/06/2023</td>
+                        <td>8,000 لتر</td>
+                        <td>تم التسليم</td>
+                        <td><button>عرض التوقيع</button></td>
+                      </tr>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>خالد كشميري</td>
+                        <td>15/06/2023</td>
+                        <td>8,000 لتر</td>
+                        <td>تم التسليم</td>
+                        <td><button>عرض التوقيع</button></td>
+                      </tr>
+                      <tr>
+                        <td>#WTR-2021-015</td>
+                        <td>خضر كرويته</td>
+                        <td>15/06/2023</td>
+                        <td>8,000 لتر</td>
+                        <td>ملغاه</td>
+                        <td><button>تفاصيل</button></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                 </div>
+                 <!-- confirmation forms -->
+                  <div class="confirmation-forms">
+                    <form action="">
+                      <div class="title">
+                        <img src="images/dashbordIcons/assignment.png" alt="assignment">
+                        <h2>تأكيد استلام الشحنة الحالية</h2>
+                      </div>
+                      <div class="row1 flex space-between">
+                        <div class="truck-num">
+                          <label for="truck-num">رقم الشحنة</label>
+                          <input type="text" id="truck-num" placeholder="#TRK-7890">
+                        </div>
+                        <div class="water-amount">
+                          <label for="water-amount">كمية المياه المتبقية</label>
+                          <input type="text" id="water-amount" placeholder="5,000 لتر">
+                        </div>
+                      </div>
+                      <div class="row2 flex space-between">
+                        <div class="shelter-input">
+                          <label for="shelter-input">مركز الإيواء</label>
+                          <input type="text" id="shelter-input" placeholder="مركز جباليا">
+                        </div>
+                        <div class="time-to-arrive">
+                          <label for="time-to-arrived">وقت الوصول</label>
+                          <input type="text" id="time-to-arrived" placeholder="09:25 صباحًا">
+                        </div>
+                      </div>
+                      
+                      <div class="row3 flex space-between">
+                        <div class="delivered">
+                          <label for="delivered">كمية المياه المسلمة (لتر)</label>
+                          <input type="number" id="delivered" placeholder="">
+                        </div>
+                        <div class="time-to-arrive">
+                          <label for="quality">جودة المياه</label>
+                          <select name="quality " id="quality">
+                            <option value="#1">ممتازة</option>
+                            <option value="#1">جيدة</option>
+                            <option value="#1">سيئة</option>
+                          </select>
+                        </div>
+                        
+                      </div>
+                      <div class="row4 flex space-between">
+                        <label for="notes">ملاحظات (اختياري)</label>
+                        <textarea name="notes" id="notes"></textarea>
+                      </div>
+                    </form>
+                  </div>
+            </div>
+         </div>
+    </div>
+  </body>
+</html>
