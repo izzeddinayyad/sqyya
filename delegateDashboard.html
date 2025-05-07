@@ -10,11 +10,11 @@
       rel="stylesheet"
     />
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
-    <link rel="stylesheet" href="css/driverDashbord.css" />
+    <link rel="stylesheet" href="css/delegateDashboard.css" />
     <title > المندوب -  SqyyaAlmiyah</title>
   </head>
   <body>
-    <div class="container-full">
+    <div class="container-full flex">
         <!-- side bar section -->
         <div class="sidebar">
             <div class="header-side">
@@ -23,39 +23,48 @@
                 </div>
                 <h2>لوحة تحكم المندوب</h2>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#">الرئيسية</a><img src="images/dashbordIcons/cottage.png" alt="cottage"></li>
-                <li><a href="#">الشاحنات الواردة</a><img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></li>
-                <li><a href="#">سجل التسليمات</a><img src="images/dashbordIcons/assignment.png" alt="assignment"></li>
-                <li><a href="#">المستفيدون</a><img src="images/dashbordIcons/diversity_3.png" alt="diversity_3"></li>
-                <li><a href="#">التقارير</a><img src="images/dashbordIcons/draft.png" alt="draft"></li>
-                <li><a href="#">الاعدادات</a><img src="images/dashbordIcons/settings.png" alt="settings"></li>
-                <li><a href="#">تسجيل الخروج</a><img src="images/dashbordIcons/exit_to_app.png" alt="exit_to_app"></li>
+            <ul class="nav-menu flex flex-column">
+                <li class="active flex"><img src="images/dashbordIcons/cottage.png" alt="cottage"><a href="#" >الرئيسية</a></li>
+                <li class="flex">
+                  <img src="images/dashbordIcons/local_shipping.png" alt="local_shipping">
+                  <a href="#">الشاحنات الواردة</a>
+                  <span class="notification-box flex justify-content-center  ">3</span> 
+
+                </li>
+                <li class="flex"><img src="images/dashbordIcons/assignment.png" alt="assignment"><a href="#">سجل التسليمات</a></li>
+                <li class="flex"><img src="images/dashbordIcons/draft.png" alt="draft"><a href="#">التقارير</a></li>
+                <li class="flex"><img src="images/dashbordIcons/diversity_3.png" alt="diversity_3"><a href="#">المستفيدون</a></li>
+                <li class="flex"><img src="images/dashbordIcons/settings.png" alt="settings"><a href="#">الاعدادات</a></li>
+                <li class="flex mt-70"><img src="images/dashbordIcons/exit_to_app.png" alt="exit_to_app"><a href="#">تسجيل الخروج</a></li>
             </ul>
         </div>
         <!-- the main content section -->
          <div class="main-content">
             <!-- dashboard header -->
-            <div class="head">
-                <div class="notification">
-                    <img src="images/dashbordIcons/notifications.png" alt="notification">
-                </div>
-                <div class="image-logo">
-                    <img src="images/dashbordIcons/Group 48095965.png" alt="profile-picture">
-                </div>
-                <div class="name-jop-title">
-                  <span>محمد سنبل</span>
-                  <span>مندوب مركز جباليا</span>
+            <div class="head  ">
+                <div class="flex container">
+                  <div class="notification">
+                    <span>5</span>
+                    <img src="images/dashbordIcons/notifications.png" class="notification-icon" alt="notification">
+                  </div>
+                  <div class="image-logo">
+                      <img src="images/dashbordIcons/Group 48095965.png" alt="profile-picture">
+                  </div>
+                  <div class="name-jop-title flex flex-column ">
+                    <span class="user-name">محمد سنبل</span>
+                    <span>مندوب مركز جباليا</span>
+                  </div>
                 </div>
             </div>
             <!-- dashboard content -->
-            <div class="container flex direcation-column space-between">
+            <div class="dashboard-tables flex flex-column container space-between mt-70">
               <h2>لوحة التحكم - المندوب</h2>
               <!-- Shelter information -->
                <div class="shelter">
-                <table border="1">
-                  <caption class="flex space-between"><span>معلومات مركز الإيواء<img src="images/dashbordIcons/cottage.png" alt="cottage"></span><button>عرض الكل</button></caption>
+                <table>
                   <thead>
+                    <caption class="flex space-between"><span><img src="images/dashbordIcons/cottage.png" alt="cottage">معلومات مركز الإيواء</span><button>عرض الكل</button></caption>
+
                     <th>اسم المركز</th>
                     <th>عدد المستفيدين</th>
                     <th>آخر تحديث</th>
@@ -94,8 +103,9 @@
                <!-- daily trucks -->
                 <div class="daily-trucks">
                   <table border="1">
-                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></span><button>عرض الكل</button></caption>
                     <thead>
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></span><button>عرض الكل</button></caption>
+
                       <th>رقم الشحنة</th>
                       <th>السائق</th>
                       <th>الوقت المتوقع</th>
@@ -134,8 +144,9 @@
                 <!-- history records -->
                  <div class="history-records">
                   <table border="1">
-                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/history.png" alt="history-records"></span><button>عرض الكل</button></caption>
                     <thead>
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/history.png" alt="history-records"></span><button>عرض الكل</button></caption>
+
                       <th>رقم الشحنة</th>
                       <th>السائق</th>
                       <th>التاريخ</th>
