@@ -63,7 +63,7 @@
                <div class="shelter">
                 <table>
                   <thead>
-                    <caption class="flex space-between"><span><img src="images/dashbordIcons/cottage.png" alt="cottage">معلومات مركز الإيواء</span><button>عرض الكل</button></caption>
+                    <caption class="flex space-between"><span class="flex space-between">معلومات مركز الإيواء</span><button>عرض الكل</button></caption>
 
                     <th>اسم المركز</th>
                     <th>عدد المستفيدين</th>
@@ -102,9 +102,9 @@
                </div>
                <!-- daily trucks -->
                 <div class="daily-trucks">
-                  <table border="1">
+                  <table>
                     <thead>
-                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/local_shipping.png" alt="local_shipping"></span><button>عرض الكل</button></caption>
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم</span><button>عرض الكل</button></caption>
 
                       <th>رقم الشحنة</th>
                       <th>السائق</th>
@@ -119,7 +119,7 @@
                         <td>محمد خليل كنباوي</td>
                         <td>09:30 صباحًا</td>
                         <td>8,000 لتر</td>
-                        <td>نشطة</td>
+                        <td><span class="status-badge status-active">نشطة</span></td>
                         <td><button>تفاصيل</button></td>
                       </tr>
                       <tr>
@@ -127,7 +127,7 @@
                         <td>خالد كشميري</td>
                         <td>09:30 صباحًا</td>
                         <td>8,000 لتر</td>
-                        <td>نشطة</td>
+                        <td><span class="status-badge status-active">نشطة</span></td>
                         <td><button>تفاصيل</button></td>
                       </tr>
                       <tr>
@@ -135,7 +135,7 @@
                         <td>خضر كرويته</td>
                         <td>09:30 صباحًا</td>
                         <td>8,000 لتر</td>
-                        <td>نشطة</td>
+                        <td><span class="status-badge status-active">نشطة</span></td>
                         <td><button>تفاصيل</button></td>
                       </tr>
                     </tbody>
@@ -143,9 +143,9 @@
                 </div>
                 <!-- history records -->
                  <div class="history-records">
-                  <table border="1">
+                  <table>
                     <thead>
-                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم<img src="images/dashbordIcons/history.png" alt="history-records"></span><button>عرض الكل</button></caption>
+                    <caption class="flex space-between"><span>الشحنات المتوقعة اليوم</span><button>عرض الكل</button></caption>
 
                       <th>رقم الشحنة</th>
                       <th>السائق</th>
@@ -160,7 +160,7 @@
                         <td>محمد خليل كنباوي</td>
                         <td>15/06/2023</td>
                         <td>8,000 لتر</td>
-                        <td>تم التسليم</td>
+                        <td><span class="status-badge status-active">نشطة</span></td>
                         <td><button>عرض التوقيع</button></td>
                       </tr>
                       <tr>
@@ -168,7 +168,7 @@
                         <td>خالد كشميري</td>
                         <td>15/06/2023</td>
                         <td>8,000 لتر</td>
-                        <td>تم التسليم</td>
+                        <td><span class="status-badge status-delivered">تم التسليم</span></td>
                         <td><button>عرض التوقيع</button></td>
                       </tr>
                       <tr>
@@ -176,7 +176,7 @@
                         <td>خضر كرويته</td>
                         <td>15/06/2023</td>
                         <td>8,000 لتر</td>
-                        <td>ملغاه</td>
+                        <td><span class="status-badge status-cancelled">ملغاه</span></td>
                         <td><button>تفاصيل</button></td>
                       </tr>
                     </tbody>
