@@ -13,6 +13,9 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+.block{
+  display: block;
+}
 .flex {
   display: flex;
 }
@@ -28,26 +31,6 @@ body {
 }
 a {
   text-decoration: none;
-}
-table {
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px 12px 0px 0px;
-  overflow: hidden;
-  border: 1px solid #D0D0D0;
-  margin: 50px 0;
-  width: 100%;
-}
-table , th , td ,caption{
-  border-bottom: 1px solid #D0D0D0;
-  /* width: auto; */
-}
-caption{
-  padding: 20px;
-  width: 100%;
-}
-caption span{
-  font-weight: bold;
-  font-size: 18px;
 }
 ul {
   list-style: none;
@@ -159,5 +142,42 @@ ul {
 }
 /* ==================tables===================== */
 table{
- 
+  width: 100%;
+  border: 1px solid #D0D0D0;
+  padding: 15px 0;
+  text-align: center;
+  margin: 100px 0;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+}
+caption ,th ,td{
+  border-bottom: 1px solid #D0D0D0;
+  padding: 30px 0;
+  font-size: 20px;
+
+}
+th{
+  font-weight: 900;
+}
+td{
+  color: gray;
+  font-weight: 500;
+}
+caption{
+  border-collapse: collapse;
+  position: relative;
+  caption-side: top;
+}
+caption button{
+  position: relative;
+
+}
+td.active span{
+  padding:  5px 30px;
+  background: #198754;
+  color: #ffffff;
+  border-radius: 20px;
+}
+.border-bt-0{
+  border-bottom: 0px solid !important;
 }
