@@ -150,10 +150,13 @@ table{
   border-radius: 12px 12px 0 0;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
 }
+
 caption ,th ,td{
   border-bottom: 1px solid #D0D0D0;
   padding: 30px 0;
   font-size: 20px;
+  text-align: center;
+  
 
 }
 th{
@@ -167,6 +170,7 @@ caption{
   border-collapse: collapse;
   position: relative;
   caption-side: top;
+  font-weight: bolder;
 }
 caption button{
   position: relative;
@@ -180,4 +184,226 @@ td.active span{
 }
 .border-bt-0{
   border-bottom: 0px solid !important;
+}
+.status-badge{
+  background: #CCE5FF;
+  padding:  5px 30px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.status-delivered{
+  background: #D4EDDA;
+}
+.status-cancelled{
+  background: #F8D7DA;
+}
+
+.daily-trucks button,
+.history-records button{
+  padding: 10px 25px ;
+  border-radius: 12px;
+  border: 1px #6C5CE7 solid;
+  color: #6C5CE7;
+}
+
+
+/* ===================confirmation forms====================== */
+
+/* Main Form Container */
+.confirmation-forms {
+  direction: rtl;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  margin: 40px auto;
+  padding: 25px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+/* Form Title Section */
+.confirmation-forms .title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.confirmation-forms .title h2 {
+  color: #333;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.confirmation-forms .title img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Form Rows Layout */
+.confirmation-forms .flex {
+  display: flex;
+}
+
+.confirmation-forms .space-between {
+  justify-content: space-between;
+}
+
+.confirmation-forms .row1,
+.confirmation-forms .row2,
+.confirmation-forms .row3 {
+  margin-bottom: 25px;
+}
+
+.confirmation-forms .row4 {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  
+}
+
+/* Form Input Fields */
+.confirmation-forms label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+  font-size: 15px;
+}
+
+.confirmation-forms input[type="text"],
+.confirmation-forms input[type="number"],
+.confirmation-forms select {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.confirmation-forms input[type="text"]::placeholder,
+.confirmation-forms input[type="number"]::placeholder {
+  color: #999;
+  opacity: 1;
+}
+
+.confirmation-forms textarea {
+  width: 100%;
+  min-height: 100px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f9f9f9;
+  resize: vertical;
+}
+
+/* Select Dropdown Styling */
+.confirmation-forms select {
+  appearance: none;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+  background-repeat: no-repeat;
+  background-position: left 15px center;
+  background-size: 14px;
+  padding-right: 15px;
+}
+
+/* Input Field Widths */
+.confirmation-forms .truck-num,
+.confirmation-forms .water-amount,
+.confirmation-forms .shelter-input,
+.confirmation-forms .time-to-arrive,
+.confirmation-forms .delivered,
+.confirmation-forms .time-to-arrive {
+  width: 48%;
+}
+
+/* Buttons Section */
+.confirmation-forms .btn-recived-isuss {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.confirmation-forms .btn-recived-isuss button {
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirmation-forms .btn-recived-isuss button:first-child {
+  background-color: #f8f8f8;
+  color: #DC3545;
+  border: 1px solid #DC3545;
+}
+
+.confirmation-forms .btn-recived-isuss button:last-child {
+  background-color: #4CAF50;
+  color: white;
+  border: 1px solid #4CAF50;
+}
+
+.confirmation-forms .btn-recived-isuss button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .confirmation-forms .flex {
+    flex-direction: column;
+  }
+  
+  .confirmation-forms .truck-num,
+  .confirmation-forms .water-amount,
+  .confirmation-forms .shelter-input,
+  .confirmation-forms .time-to-arrive,
+  .confirmation-forms .delivered,
+  .confirmation-forms .time-to-arrive {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .confirmation-forms .btn-recived-isuss {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 1000;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .toggle-btn {
+    display: block;
+  }
 }

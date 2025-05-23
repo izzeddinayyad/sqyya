@@ -102,10 +102,10 @@
           <!-- Shelter information -->
           <div class="shelter">
             <table>
-              <!-- <caption class="flex space-between " >
+              <caption>
                 <h3 class=" ">معلومات مركز الإيواء</h3>    
-                <button class="">عرض الكل</button>
-              </caption> -->
+                <!-- <button class="">عرض الكل</button> -->
+              </caption>
               <tr>
                   <th>اسم المركز</th>
                   <th>عدد المستفيدين</th>
@@ -146,9 +146,9 @@
           <div class="daily-trucks">
             <table>
               <thead>
-                <caption class="flex space-between">
-                  <span>الشحنات المتوقعة اليوم</span
-                  ><button>عرض الكل</button>
+                <caption >
+                  <span>الشحنات المتوقعة اليوم</span>
+                  <!-- <button>عرض الكل</button> -->
                 </caption>
 
                 <th>رقم الشحنة</th>
@@ -191,8 +191,8 @@
             <table>
               <thead>
                 <caption class="flex space-between">
-                  <span>الشحنات المتوقعة اليوم</span
-                  ><button>عرض الكل</button>
+                  <span>سجل الشحنات الأخيرة</span>
+                  <!-- <button>عرض الكل</button> -->
                 </caption>
 
                 <th>رقم الشحنة</th>
@@ -217,8 +217,7 @@
                   <td>15/06/2023</td>
                   <td>8,000 لتر</td>
                   <td>
-                    <span class="status-badge status-delivered"
-                      >تم التسليم</span
+                    <span class="status-badge status-delivered">تم التسليم</span
                     >
                   </td>
                   <td><button>عرض التوقيع</button></td>
@@ -293,9 +292,13 @@
                   </select>
                 </div>
               </div>
-              <div class="row4 flex space-between">
+              <div class="row4 flex space-between flex-column">
                 <label for="notes">ملاحظات (اختياري)</label>
                 <textarea name="notes" id="notes"></textarea>
+              </div>
+              <div class="btn-recived-isuss">
+                <button>إبلاغ عن مشكلة</button>
+                <button>تأكيد الاستلام</button>
               </div>
             </form>
           </div>
