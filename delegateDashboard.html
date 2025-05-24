@@ -9,12 +9,16 @@
       href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/delegateDashboard.css" />
     <title>المندوب - SqyyaAlmiyah</title>
   </head>
   <body>
     <div class="container-full flex">
+
+      
       <!-- side bar section -->
       <div class="sidebar">
         <div class="header-side">
@@ -74,6 +78,9 @@
         <!-- dashboard header -->
         <div class="head">
           <div class="flex container">
+            <div class="mobile-menu-toggle">
+               <i class="fas fa-bars"></i>
+             </div>
             <div class="notification">
               <span>5</span>
               <img
@@ -103,16 +110,16 @@
           <div class="shelter">
             <table>
               <caption>
-                <h3 class=" ">معلومات مركز الإيواء</h3>    
+                <h3 class=" ">معلومات مركز الإيواء</h3>
                 <!-- <button class="">عرض الكل</button> -->
               </caption>
               <tr>
-                  <th>اسم المركز</th>
-                  <th>عدد المستفيدين</th>
-                  <th>آخر تحديث</th>
-                  <th>المحافظة</th>
-                  <th>الكمية اليومية المطلوبة</th>
-                  <th>حالة المركز</th>
+                <th>اسم المركز</th>
+                <th>عدد المستفيدين</th>
+                <th>آخر تحديث</th>
+                <th>المحافظة</th>
+                <th>الكمية اليومية المطلوبة</th>
+                <th>حالة المركز</th>
               </tr>
               <tbody>
                 <tr>
@@ -146,7 +153,7 @@
           <div class="daily-trucks">
             <table>
               <thead>
-                <caption >
+                <caption>
                   <span>الشحنات المتوقعة اليوم</span>
                   <!-- <button>عرض الكل</button> -->
                 </caption>
@@ -217,7 +224,8 @@
                   <td>15/06/2023</td>
                   <td>8,000 لتر</td>
                   <td>
-                    <span class="status-badge status-delivered">تم التسليم</span
+                    <span class="status-badge status-delivered"
+                      >تم التسليم</span
                     >
                   </td>
                   <td><button>عرض التوقيع</button></td>
@@ -305,5 +313,27 @@
         </div>
       </div>
     </div>
+
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const sidebar = document.querySelector('.sidebar');
+        const overlay = document.createElement('div');
+        overlay.className = 'overlay';
+        document.body.appendChild(overlay);
+        
+        function toggleSidebar() {
+          sidebar.classList.toggle('active');
+          overlay.classList.toggle('active');
+          
+          // Simple toggle without changing icon
+          mobileMenuToggle.classList.toggle('active');
+        }
+        
+        mobileMenuToggle.addEventListener('click', toggleSidebar);
+        overlay.addEventListener('click', toggleSidebar);
+      });
+    </script>
   </body>
 </html>
