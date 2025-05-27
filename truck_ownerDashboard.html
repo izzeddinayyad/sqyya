@@ -13,7 +13,8 @@
 
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/delegateDashboard.css" />
-    <title>المندوب - SqyyaAlmiyah</title>
+    <link rel="stylesheet" href="css/truck_ownerDashboard.css" />
+    <title>صاحب الشاحنة - SqyyaAlmiyah</title>
   </head>
   <body>
     <div class="container-full flex">
@@ -25,7 +26,7 @@
           <div class="logo">
             <img src="images/logo.png" alt="logo" />
           </div>
-          <h2>لوحة تحكم المندوب</h2>
+          <h2>لوحة تحكم السائق</h2>
         </div>
         <ul class="nav-menu flex flex-column">
           <li class="active flex">
@@ -39,25 +40,25 @@
               src="images/dashbordIcons/local_shipping.png"
               alt="local_shipping"
             />
-            <a href="#">الشاحنات الواردة</a>
+            <a href="#">مهام التوصيل</a>
             <span class="notification-box flex justify-content-center">3</span>
           </li>
           <li class="flex">
             <img src="images/dashbordIcons/assignment.png" alt="assignment" /><a
               href="#"
-              >سجل التسليمات</a
+              >سجل التعبئة</a
             >
           </li>
           <li class="flex">
             <img src="images/dashbordIcons/draft.png" alt="draft" /><a href="#"
-              >التقارير</a
+              >الجدول الزمني</a
             >
           </li>
           <li class="flex">
             <img
               src="images/dashbordIcons/diversity_3.png"
               alt="diversity_3"
-            /><a href="#">المستفيدون</a>
+            /><a href="#">ملاحظة</a>
           </li>
           <li class="flex">
             <img src="images/dashbordIcons/settings.png" alt="settings" /><a
@@ -96,39 +97,42 @@
               />
             </div>
             <div class="name-jop-title flex flex-column">
-              <span class="user-name">محمد سنبل</span>
-              <span>مندوب مركز جباليا</span>
+              <span class="user-name">ماجد فرج</span>
+              <span>سائق الشاحنة المياه</span>
             </div>
           </div>
         </div>
         <!-- dashboard content -->
         <div class="dashboard-tables flex flex-column container space-between mt-70">
-          <h2>لوحة التحكم - المندوب</h2>
-          <!-- Shelter information -->
+          <h2>لوحة التحكم - السائق</h2>
+          <!-- driver information -->
           <div class="shelter">
             <table>
               <caption>
-                <h3 class=" ">معلومات مركز الإيواء</h3>
+                <h3 class=" ">معلومات الشاحنة</h3>
                 <!-- <button class="">عرض الكل</button> -->
               </caption>
               <tr>
-                <th>اسم المركز</th>
-                <th>عدد المستفيدين</th>
-                <th>آخر تحديث</th>
+                <th>رقم الشاحنة الشاحنة</th>
+                <th>المحطة التابعة</th>
+                <th>سعة الخزان</th>
                 <th>المحافظة</th>
-                <th>الكمية اليومية المطلوبة</th>
+                <th>آخر صيانة</th>
+                <th>المسافة المقطوعة</th>
                 <th>حالة المركز</th>
               </tr>
               <tbody>
                 <tr>
-                  <td>مركز جباليا للإيواء</td>
-                  <td>250 أسرة</td>
+                  <td> #TRK-7890</td>
+                  <td>محطة التحلية الشمالية</td>
                   <td>10:30 صباحًا</td>
-                  <td>15/06/2023</td>
                   <td>8,000 لتر</td>
+                  <td>15/06/2023</td>
+                  <td>1,250 كم</td>
                   <td class="active"><span>نشطة</span></td>
                 </tr>
                 <tr>
+                  <td>-</td>
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
@@ -143,105 +147,93 @@
                   <td>-</td>
                   <td>-</td>
                   <td>-</td>
+                  <td>-</td>
                 </tr>
               </tbody>
             </table>
           </div>
-          <!-- daily trucks -->
-          <div class="daily-trucks">
-            <table>
-              <thead>
-                <caption>
-                  <span>الشحنات المتوقعة اليوم</span>
-                  <!-- <button>عرض الكل</button> -->
-                </caption>
+          <!--truck info -->
+          <div class="flex space-between truck-info">
+            <div class="water-info flex flex-column">
+                <a href="#">icon</a>
+                <h2>مهام التوصيل</h2>
+                <div>
+                    <div class="flex">
+                        <div>
 
-                <th>رقم الشحنة</th>
-                <th>السائق</th>
-                <th>الوقت المتوقع</th>
-                <th>الكمية</th>
-                <th>الحالة</th>
-                <th>الإجراء</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>محمد خليل كنباوي</td>
-                  <td>09:30 صباحًا</td>
-                  <td>8,000 لتر</td>
-                  <td><span class="status-badge status-active">نشطة</span></td>
-                  <td><button>تفاصيل</button></td>
-                </tr>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>خالد كشميري</td>
-                  <td>09:30 صباحًا</td>
-                  <td>8,000 لتر</td>
-                  <td><span class="status-badge status-active">نشطة</span></td>
-                  <td><button>تفاصيل</button></td>
-                </tr>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>خضر كرويته</td>
-                  <td>09:30 صباحًا</td>
-                  <td>8,000 لتر</td>
-                  <td><span class="status-badge status-active">نشطة</span></td>
-                  <td><button>تفاصيل</button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-          <!-- history records -->
-          <div class="history-records">
-            <table>
-              <thead>
-                <caption class="flex space-between">
-                  <span>سجل الشحنات الأخيرة</span>
-                  <!-- <button>عرض الكل</button> -->
-                </caption>
+                            <a  href="#">icon</a>
+                            <div class="flex flex-column">
+                                <span>توصيل إلى مركز جباليا</span>
+                                <span>5,000 لتر</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>09:30 صباحًا</span>
+                            <span class="in-progress">قيد التنفيذ</span>
+                        </div>
+                    </div>
 
-                <th>رقم الشحنة</th>
-                <th>السائق</th>
-                <th>التاريخ</th>
-                <th>الكمية</th>
-                <th>الحالة</th>
-                <th>التوقيع</th>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>محمد خليل كنباوي</td>
-                  <td>15/06/2023</td>
-                  <td>8,000 لتر</td>
-                  <td><span class="status-badge status-active">نشطة</span></td>
-                  <td><button>عرض التوقيع</button></td>
-                </tr>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>خالد كشميري</td>
-                  <td>15/06/2023</td>
-                  <td>8,000 لتر</td>
-                  <td>
-                    <span class="status-badge status-delivered"
-                      >تم التسليم</span
-                    >
-                  </td>
-                  <td><button>عرض التوقيع</button></td>
-                </tr>
-                <tr>
-                  <td>#WTR-2021-015</td>
-                  <td>خضر كرويته</td>
-                  <td>15/06/2023</td>
-                  <td>8,000 لتر</td>
-                  <td>
-                    <span class="status-badge status-cancelled">ملغاه</span>
-                  </td>
-                  <td><button>تفاصيل</button></td>
-                </tr>
-              </tbody>
-            </table>
+                </div>
+                <div>
+                    <div class="flex">
+                        <div>
+
+                            <a  href="#">icon</a>
+                            <div class="flex flex-column">
+                                <span>توصيل إلى مركز الشاطئ</span>
+                                <span>5,500 لتر</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>04:30 صباحًا</span>
+                            <span>جاهز للعمل </span>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </div>
+            <div class="water-info flex flex-column">
+                <a href="#">icon</a>
+                <h2>جدول التعبئة</h2>
+                <div>
+                    <div class="flex">
+                        <div>
+
+                            <a  href="#">icon</a>
+                            <div class="flex flex-column">
+                                <span>تعبئة الخزان</span>
+                                <span>محطة التحلية الشمالية</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>1,250 كم</span>
+                            <span>جاهز للعمل</span>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="flex">
+                        <div>
+
+                            <a  href="#">icon</a>
+                            <div class="flex flex-column">
+                                <span>تعبئة الخزان</span>
+                                <span>محطة التحلية الشمالية</span>
+                            </div>
+                        </div>
+                        <div>
+                            <span>1,250 كم</span>
+                            <span>جاهز للعمل</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
           </div>
-          <!-- confirmation forms -->
+          <!--confirmation form for receiving -->
           <div class="confirmation-forms">
             <form action="">
               <div class="title">
@@ -249,7 +241,7 @@
                   src="images/dashbordIcons/assignment.png"
                   alt="assignment"
                 />
-                <h2>تأكيد استلام الشحنة الحالية</h2>
+                <h2>جدول تأكيد التسليم الحاليا لتعبئة</h2>
               </div>
               <div class="row1 flex space-between">
                 <div class="truck-num">
@@ -308,6 +300,7 @@
               </div>
             </form>
           </div>
+         
         </div>
       </div>
     </div>
