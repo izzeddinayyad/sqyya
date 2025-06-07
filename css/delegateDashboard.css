@@ -328,6 +328,62 @@ td.active span {
 
 
 
+
+
+@media (max-width: 992px) {
+  .truck-info > div {
+    padding: 25px;
+  }
+  .status-group {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .truck-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .truck-info > div {
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .item-details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .status-group {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 480px) {
+  .truck-info > div {
+    padding: 16px;
+  }
+  
+  .title-info h2 {
+    font-size: 1rem;
+  }
+  
+  .item-row {
+    gap: 10px;
+  }
+  
+  .status-badge {
+    font-size: 0.8rem;
+    padding: 3px 10px;
+  }
+}
+
+
+
+
 /* ===================confirmation forms====================== */
 .confirmation-forms {
   direction: rtl;
@@ -455,6 +511,21 @@ td.active span {
 
 .confirmation-forms .btn-recived-isuss button:last-child:hover {
   background-color: #3e8e41;
+}
+
+
+/* truck map ===================================== */
+
+.map-container {
+  margin: 20px 0;
+  width: 100%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+#truck-map {
+  width: 100%;
+  z-index: 1; /* Ensures map displays properly */
 }
 
 /* Overlay for mobile menu */

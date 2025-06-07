@@ -14,6 +14,8 @@
     <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
     <link rel="stylesheet" href="css/delegateDashboard.css" />
     <link rel="stylesheet" href="css/truck_ownerDashboard.css" />
+          <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+
     <title>صاحب الشاحنة - SqyyaAlmiyah</title>
   </head>
   <body>
@@ -255,68 +257,13 @@
                     </div>
 
 
-                    <!-- <div class="flex">
-                        <div class="flex">
-    
-                            <a  href="#"><i class="fa-solid fa-water"></i></a>
-                            <div class="flex flex-column">
-                                <span>تعبئة الخزان</span>
-                                <span>محطة التحلية الشمالية</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span>1,250 كم</span>
-                            <span>جاهز للعمل</span>
-                        </div>
-                    </div> -->
+                    
               </div>
                 
             </div>
 
 
 
-
-            <!-- <div class="water-info flex  flex-column">
-              <div class="flex title-info">
-                <a href="#"><i class="fa-solid fa-bars"></i></a>
-                <h2>مهام التوصيل</h2>
-              </div>
-
-              
-                <div class="content-info">
-                    <div class="flex space-between">
-                        <div class="flex">
-
-                            <a  href="#"><i class="fa-solid fa-water"></i></a>
-                            <div class="flex flex-column">
-                                <span>توصيل إلى مركز جباليا</span>
-                                <span>5,000 لتر</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span>09:30 صباحًا</span>
-                            <span class="in-progress">قيد التنفيذ</span>
-                        </div>
-                    </div>
-
-                    <div class="flex">
-                        <div class="flex">
-    
-                            <a  href="#"><i class="fa-solid fa-water"></i></a>
-                            <div class="flex flex-column">
-                                <span>توصيل إلى مركز الشاطئ</span>
-                                <span>5,500 لتر</span>
-                            </div>
-                        </div>
-                        <div>
-                            <span>04:30 صباحًا</span>
-                            <span>جاهز للعمل </span>
-                        </div>
-                    </div>
-                </div> 
-                
-            </div> -->
-            
 
           </div>
           <!--confirmation form for receiving -->
@@ -386,13 +333,45 @@
               </div>
             </form>
           </div>
-         
+         <!-- truck map -->
+
+          <div class="map-container">
+            <div id="truck-map" style="height: 400px; border-radius: 8px;"></div>
+          </div>
+
+          <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
         </div>
       </div>
     </div>
 
 
     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Initialize map centered on UAE (example coordinates)
+        const map = L.map('truck-map').setView([25.276987, 55.296249], 12);
+        
+        // Add OpenStreetMap tiles
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+        
+        // Add truck markers (example data)
+        const trucks = [
+          { id: 1, lat: 25.276987, lng: 55.296249, status: 'active', label: 'Truck 1 - Delivering' },
+          { id: 2, lat: 25.286000, lng: 55.306000, status: 'inactive', label: 'Truck 2 - Available' }
+        ];
+        
+        trucks.forEach(truck => {
+          const icon = L.divIcon({
+            html: `<div class="truck-icon ${truck.status}">🚛</div>`,
+            className: 'custom-icon'
+          });
+          
+          L.marker([truck.lat, truck.lng], { icon })
+            .addTo(map)
+            .bindPopup(truck.label);
+        });
+      });
       document.addEventListener('DOMContentLoaded', function() {
         const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
         const sidebar = document.querySelector('.sidebar');
